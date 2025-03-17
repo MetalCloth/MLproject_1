@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: my_package
+Version: 0.1
+Author: Puneet Rawat
+Author-email: rawatpuneet927@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
