@@ -1,2 +1,8 @@
 2025-03-18 01:24:01,012:INFO:Logging has started
 2025-03-18 01:24:10,535:INFO:Divide by zero error occurred
+2025-03-18 01:56:26,665:INFO:Data Ingestion method started
+2025-03-18 01:56:26,669:INFO:Data Ingestion method completed
+2025-03-18 01:56:26,674:INFO:Train test split initiated
+2025-03-18 01:56:26,679:INFO:Ingestion of data completed
+2025-03-18 01:57:31,424:INFO:Data Ingestion method started
+2025-03-18 01:57:31,427:INFO:Data Ingestion method completed
