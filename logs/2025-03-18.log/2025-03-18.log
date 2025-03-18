@@ -73,3 +73,62 @@
 2025-03-18 21:26:02,275:INFO:input_feature_train_df: (800, 7) target_feature_train_df: (800,)
 2025-03-18 21:26:02,295:INFO:Train array shape: (800, 20)
 2025-03-18 21:26:02,296:INFO:Test array shape: (200, 20)
+2025-03-18 22:08:59,572:INFO:Entered the data ingestion method or component
+2025-03-18 22:08:59,591:INFO:Read the dataset as dataframe
+2025-03-18 22:08:59,604:INFO:Train test split initiated
+2025-03-18 22:08:59,621:INFO:Inmgestion of the data iss completed
+2025-03-18 22:08:59,630:INFO:Read train and test data completed
+2025-03-18 22:08:59,631:INFO:Obtaining preprocessing object
+2025-03-18 22:08:59,631:INFO:Numerical columns encoding complete
+2025-03-18 22:08:59,631:INFO:Categorical columns encoding complete
+2025-03-18 22:08:59,631:INFO:numerical_columns: ['reading score', 'writing score']
+2025-03-18 22:08:59,631:INFO:categorical_columns: ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+2025-03-18 22:08:59,635:INFO:input_feature_train_df: (800, 7) target_feature_train_df: (800,)
+2025-03-18 22:08:59,671:INFO:Train array shape: (800, 20)
+2025-03-18 22:08:59,671:INFO:Test array shape: (200, 20)
+2025-03-18 22:08:59,680:INFO:Entered the model training method or component
+2025-03-18 22:11:14,091:INFO:Entered the data ingestion method or component
+2025-03-18 22:11:14,099:INFO:Read the dataset as dataframe
+2025-03-18 22:11:14,107:INFO:Train test split initiated
+2025-03-18 22:11:14,115:INFO:Inmgestion of the data iss completed
+2025-03-18 22:11:14,122:INFO:Read train and test data completed
+2025-03-18 22:11:14,122:INFO:Obtaining preprocessing object
+2025-03-18 22:11:14,122:INFO:Numerical columns encoding complete
+2025-03-18 22:11:14,122:INFO:Categorical columns encoding complete
+2025-03-18 22:11:14,122:INFO:numerical_columns: ['reading score', 'writing score']
+2025-03-18 22:11:14,122:INFO:categorical_columns: ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+2025-03-18 22:11:14,125:INFO:input_feature_train_df: (800, 7) target_feature_train_df: (800,)
+2025-03-18 22:11:14,149:INFO:Train array shape: (800, 20)
+2025-03-18 22:11:14,149:INFO:Test array shape: (200, 20)
+2025-03-18 22:11:14,155:INFO:Entered the model training method or component
+2025-03-18 22:11:18,626:INFO:Best model found on both training and testing dataset
+2025-03-18 22:11:51,712:INFO:Entered the data ingestion method or component
+2025-03-18 22:11:51,718:INFO:Read the dataset as dataframe
+2025-03-18 22:11:51,724:INFO:Train test split initiated
+2025-03-18 22:11:51,731:INFO:Inmgestion of the data iss completed
+2025-03-18 22:11:51,736:INFO:Read train and test data completed
+2025-03-18 22:11:51,736:INFO:Obtaining preprocessing object
+2025-03-18 22:11:51,736:INFO:Numerical columns encoding complete
+2025-03-18 22:11:51,736:INFO:Categorical columns encoding complete
+2025-03-18 22:11:51,736:INFO:numerical_columns: ['reading score', 'writing score']
+2025-03-18 22:11:51,736:INFO:categorical_columns: ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+2025-03-18 22:11:51,738:INFO:input_feature_train_df: (800, 7) target_feature_train_df: (800,)
+2025-03-18 22:11:51,758:INFO:Train array shape: (800, 20)
+2025-03-18 22:11:51,758:INFO:Test array shape: (200, 20)
+2025-03-18 22:11:51,764:INFO:Entered the model training method or component
+2025-03-18 22:11:55,811:INFO:Best model found on both training and testing dataset
+2025-03-18 22:21:50,133:INFO:Entered the data ingestion method or component
+2025-03-18 22:21:50,139:INFO:Read the dataset as dataframe
+2025-03-18 22:21:50,145:INFO:Train test split initiated
+2025-03-18 22:21:50,152:INFO:Inmgestion of the data iss completed
+2025-03-18 22:21:50,157:INFO:Read train and test data completed
+2025-03-18 22:21:50,157:INFO:Obtaining preprocessing object
+2025-03-18 22:21:50,157:INFO:Numerical columns encoding complete
+2025-03-18 22:21:50,157:INFO:Categorical columns encoding complete
+2025-03-18 22:21:50,158:INFO:numerical_columns: ['reading score', 'writing score']
+2025-03-18 22:21:50,158:INFO:categorical_columns: ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+2025-03-18 22:21:50,159:INFO:input_feature_train_df: (800, 7) target_feature_train_df: (800,)
+2025-03-18 22:21:50,178:INFO:Train array shape: (800, 20)
+2025-03-18 22:21:50,179:INFO:Test array shape: (200, 20)
+2025-03-18 22:21:50,184:INFO:Entered the model training method or component
+2025-03-18 22:21:54,115:INFO:Best model found on both training and testing dataset
