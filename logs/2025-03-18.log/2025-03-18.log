@@ -6,3 +6,70 @@
 2025-03-18 01:56:26,679:INFO:Ingestion of data completed
 2025-03-18 01:57:31,424:INFO:Data Ingestion method started
 2025-03-18 01:57:31,427:INFO:Data Ingestion method completed
+2025-03-18 19:48:32,768:INFO:Data Ingestion method started
+2025-03-18 19:48:32,784:INFO:Data Ingestion method completed
+2025-03-18 19:48:42,531:INFO:Data Ingestion method started
+2025-03-18 19:48:42,565:INFO:Data Ingestion method completed
+2025-03-18 19:55:31,066:INFO:Data Ingestion method started
+2025-03-18 19:55:31,112:INFO:Data Ingestion method completed
+2025-03-18 19:55:49,360:INFO:Data Ingestion method started
+2025-03-18 19:55:49,366:INFO:Data Ingestion method completed
+2025-03-18 19:57:04,485:INFO:TERI MKC
+2025-03-18 19:58:15,579:INFO:TERI MKC
+2025-03-18 19:58:46,703:INFO:TERI MKC
+2025-03-18 19:58:46,705:INFO:Entered the data ingestion method or component
+2025-03-18 19:59:21,560:INFO:TERI MKC
+2025-03-18 19:59:21,561:INFO:Entered the data ingestion method or component
+2025-03-18 19:59:21,567:INFO:Read the dataset as dataframe
+2025-03-18 19:59:21,580:INFO:Train test split initiated
+2025-03-18 19:59:21,592:INFO:Inmgestion of the data iss completed
+2025-03-18 19:59:21,599:INFO:Read train and test data completed
+2025-03-18 19:59:21,599:INFO:Obtaining preprocessing object
+2025-03-18 19:59:21,599:INFO:Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+2025-03-18 19:59:21,599:INFO:Numerical columns: ['writing_score', 'reading_score']
+2025-03-18 19:59:54,676:INFO:TERI MKC
+2025-03-18 20:00:36,686:INFO:TERI MKC
+2025-03-18 20:02:31,128:INFO:Entered the data transformation method or component
+2025-03-18 20:02:31,133:INFO:Read the dataset as dataframe
+2025-03-18 20:02:31,167:INFO:Train test split initiated
+2025-03-18 20:55:57,229:INFO:Data Ingestion method started
+2025-03-18 20:55:57,246:INFO:Data Ingestion method completed
+2025-03-18 21:16:43,752:INFO:Data Ingestion method started
+2025-03-18 21:16:43,763:INFO:Data Ingestion method completed
+2025-03-18 21:19:54,811:INFO:Data Ingestion method started
+2025-03-18 21:19:54,818:INFO:Data Ingestion method completed
+2025-03-18 21:22:27,836:INFO:Entered the data ingestion method or component
+2025-03-18 21:22:49,637:INFO:Entered the data ingestion method or component
+2025-03-18 21:22:49,673:INFO:Read the dataset as dataframe
+2025-03-18 21:22:49,679:INFO:Train test split initiated
+2025-03-18 21:22:49,687:INFO:Inmgestion of the data iss completed
+2025-03-18 21:22:49,694:INFO:Read train and test data completed
+2025-03-18 21:22:49,694:INFO:Obtaining preprocessing object
+2025-03-18 21:22:49,694:INFO:Numerical columns encoding complete
+2025-03-18 21:22:49,694:INFO:Categorical columns encoding complete
+2025-03-18 21:22:49,694:INFO:numerical_columns: ['reading_score', 'writing_score']
+2025-03-18 21:22:49,694:INFO:categorical_columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+2025-03-18 21:24:14,031:INFO:Entered the data ingestion method or component
+2025-03-18 21:24:14,034:INFO:Read the dataset as dataframe
+2025-03-18 21:24:14,038:INFO:Train test split initiated
+2025-03-18 21:24:14,043:INFO:Inmgestion of the data iss completed
+2025-03-18 21:24:14,047:INFO:Read train and test data completed
+2025-03-18 21:24:14,047:INFO:Obtaining preprocessing object
+2025-03-18 21:24:14,047:INFO:Numerical columns encoding complete
+2025-03-18 21:24:14,047:INFO:Categorical columns encoding complete
+2025-03-18 21:24:14,047:INFO:numerical_columns: ['reading score', 'writing score']
+2025-03-18 21:24:14,048:INFO:categorical_columns: ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+2025-03-18 21:24:14,079:INFO:input_feature_train_df: (800, 7) target_feature_train_df: (800,)
+2025-03-18 21:26:02,252:INFO:Entered the data ingestion method or component
+2025-03-18 21:26:02,258:INFO:Read the dataset as dataframe
+2025-03-18 21:26:02,263:INFO:Train test split initiated
+2025-03-18 21:26:02,269:INFO:Inmgestion of the data iss completed
+2025-03-18 21:26:02,273:INFO:Read train and test data completed
+2025-03-18 21:26:02,273:INFO:Obtaining preprocessing object
+2025-03-18 21:26:02,274:INFO:Numerical columns encoding complete
+2025-03-18 21:26:02,274:INFO:Categorical columns encoding complete
+2025-03-18 21:26:02,274:INFO:numerical_columns: ['reading score', 'writing score']
+2025-03-18 21:26:02,274:INFO:categorical_columns: ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+2025-03-18 21:26:02,275:INFO:input_feature_train_df: (800, 7) target_feature_train_df: (800,)
+2025-03-18 21:26:02,295:INFO:Train array shape: (800, 20)
+2025-03-18 21:26:02,296:INFO:Test array shape: (200, 20)
