@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Indicator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        .card-header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 20px;
+        }
+        .form-label {
+            font-weight: 600;
+            color: #495057;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
+        }
+        .result-section {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e8f4ff;
+            border-left: 5px solid #2575fc;
+        }
+        .form-control, .form-select {
+            border-radius: 8px;
+            padding: 10px 15px;
+            border: 1px solid #ced4da;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #2575fc;
+            box-shadow: 0 0 0 0.25rem rgba(37, 117, 252, 0.25);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .result-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center">
+                <h2 class="mb-0">Student Exam Performance Predictor</h2>
+                <p class="mb-0">Enter your details to predict your math score</p>
+            </div>
+            <div class="card-body p-4">
+                <form action="{{ url_for('predict_datapoint')}}" method="post">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label class="form-label">Gender</label>
+                            <select class="form-select" name="gender" required>
+                                <option selected disabled value="">Select your Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 form-group">
+                            <label class="form-label">Race or Ethnicity</label>
+                            <select class="form-select" name="ethnicity" required>
+                                <option selected disabled value="">Select Ethnicity</option>
+                                <option value="group A">Group A</option>
+                                <option value="group B">Group B</option>
+                                <option value="group C">Group C</option>
+                                <option value="group D">Group D</option>
+                                <option value="group E">Group E</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label class="form-label">Parental Level of Education</label>
+                            <select class="form-select" name="parental_level_of_education" required>
+                                <option selected disabled value="">Select Parent Education</option>
+                                <option value="associate's degree">Associate's degree</option>
+                                <option value="bachelor's degree">Bachelor's degree</option>
+                                <option value="high school">High school</option>
+                                <option value="master's degree">Master's degree</option>
+                                <option value="some college">Some college</option>
+                                <option value="some high school">Some high school</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 form-group">
+                            <label class="form-label">Lunch Type</label>
+                            <select class="form-select" name="lunch" required>
+                                <option selected disabled value="">Select Lunch Type</option>
+                                <option value="free/reduced">Free/Reduced</option>
+                                <option value="standard">Standard</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label class="form-label">Test Preparation Course</label>
+                            <select class="form-select" name="test_preparation_course" required>
+                                <option selected disabled value="">Select Test Course</option>
+                                <option value="none">None</option>
+                                <option value="completed">Completed</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 form-group">
+                            <label class="form-label">Reading Score (0-100)</label>
+                            <input class="form-control" type="number" name="reading_score" 
+                                placeholder="Enter your Reading score" min="0" max="100" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label class="form-label">Writing Score (0-100)</label>
+                            <input class="form-control" type="number" name="writing_score"
+                                placeholder="Enter your Writing score" min="0" max="100" required />
+                        </div>
+                    </div>
+
+                    <div class="d-grid mt-4">
+                        <button class="btn btn-primary btn-lg" type="submit">
+                            Predict Math Score
+                        </button>
+                    </div>
+                </form>
+
+                {% if results %}
+                <div class="result-section mt-4">
+                    <h4>Prediction Result</h4>
+                    <p>Based on your inputs, your predicted Math score is: 
+                        <span class="result-value">{{ results }}</span>
+                    </p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
